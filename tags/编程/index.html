@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="GUOREN">
+    <meta name="keywords" content="标签: 编程, GUOREN">
     <meta name="description" content="GUOREN">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -19,7 +19,7 @@
 
     
 
-    <title>GUOREN</title>
+    <title>标签: 编程 | GUOREN</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -242,56 +242,9 @@
 
 </header>
 
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item  white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -336,222 +289,63 @@
 </script>
 
 
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/guorenjun" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:2338937841@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=2338937841" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 2338937841" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-        </div>
     </div>
-
-    
 </div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
 
 <main class="content">
 
     
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;GUOREN
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            We already walked too far, down to we had forgotten why embarked
-        </div>
-    </div>
-</div>
 
-                    
-
-                    
-                        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        display: none;
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        display: none;
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="music-player">
-    
-        <div class="title center-align">
-            <i class="fas fa-music"></i>&nbsp;&nbsp;听听音乐
-        </div>
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="song"
-                   id="422429425"
-                   fixed='false'
-                   autoplay='true'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.3'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
-                        
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+            </div>
+            <div class="tag-chips">
+                
+                
+                <a href="/tags/%E6%9D%82/" title="杂: 3">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="杂" style="background-color: #F9EBEA;">杂
+                        <span class="tag-length">3</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%BC%96%E7%A8%8B/" title="编程: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="编程" style="background-color: #F5EEF8;">编程
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%BC%95%E6%88%98/" title="引战: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="引战" style="background-color: #D5F5E3;">引战
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
-    
+</div>
 
     
 
-    <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row article-row">
+        <div class="row tags-posts">
             
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="编程, 引战" data-aos="fade-up">
                 <div class="card">
                     <a href="/2022/08/14/%E2%80%9Cnew%E2%80%9D/">
-                        <div class="card-image">
+                        <div class="card-image tag-image">
                             
                             
                             <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="t">
@@ -559,15 +353,7 @@
                             <span class="card-title">t</span>
                         </div>
                     </a>
-
                     <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                导读“天下没有免费的午餐。”
-这句话只说对了一半。对于软件业，或者更准确一点，对于自由软件业，这并不一直是对的。
-商业软件公司正在控制着我们 —— 普通计算机用户甚至专业的程序员 —— 的大脑，在我们的潜意识里面，似乎只有大公司的东西才质量
-                            
-                        </div>
                         <div class="publish-info">
                             <span class="publish-date">
                                 <i class="far fa-clock fa-fw icon-date"></i>2022-08-14
@@ -580,170 +366,11 @@
                             </span>
                         </div>
                     </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%BC%96%E7%A8%8B/">
-                            <span class="chip bg-color">编程</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%BC%95%E6%88%98/">
-                            <span class="chip bg-color">引战</span>
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/08/07/%E5%88%A4%E5%86%B3/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="判决">
-                            
-                            <span class="card-title">判决</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                文/Franz Kafka
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-07
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                GUORENJUN
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9D%82/">
-                            <span class="chip bg-color">杂</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/08/06/8-6/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="8.6">
-                            
-                            <span class="card-title">8.6</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                8月6日（证明这个博客还没废
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-06
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                GUORENJUN
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9D%82/">
-                            <span class="chip bg-color">杂</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/08/03/THIS-IS-A-TEST/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="THIS IS A TEST">
-                            
-                            <span class="card-title">THIS IS A TEST</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                HELLO?emmm…
-把博客搭好之后
-貌似不知道写什么了…    (￣▽￣)”
-
-The time is passing.
-
-╮(╯-╰)╭
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-03
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                GUORENJUN
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E6%9D%82/">
-                            <span class="chip bg-color">杂</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
             
         </div>
     </article>
-
 </main>
 
 
