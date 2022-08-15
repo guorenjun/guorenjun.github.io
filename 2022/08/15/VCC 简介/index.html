@@ -4,10 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="少年黑客对自由软件的自由漫谈, GUOREN">
-    <meta name="description" content="导读“天下没有免费的午餐。”
-这句话只说对了一半。对于软件业，或者更准确一点，对于自由软件业，这并不一直是对的。
-商业软件公司正在控制着我们 —— 普通计算机用户甚至专业的程序员 —— 的大脑，在我们的潜意识里面，似乎只有大公司的东西才质量">
+    <meta name="keywords" content="vcc简介, GUOREN">
+    <meta name="description" content="文/intirain">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +19,7 @@
 
     
 
-    <title>少年黑客对自由软件的自由漫谈 | GUOREN</title>
+    <title>vcc简介 | GUOREN</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -248,12 +246,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">少年黑客对自由软件的自由漫谈</h1>
+                    <h1 class="description center-align post-title">vcc简介</h1>
                 </div>
             </div>
         </div>
@@ -373,10 +371,6 @@
                                 <span class="chip bg-color">编程</span>
                             </a>
                         
-                            <a href="/tags/%E5%BC%95%E6%88%98/">
-                                <span class="chip bg-color">引战</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -389,7 +383,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-14
+                    2022-08-15
                 </div>
                 
 
@@ -398,7 +392,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.4k
+                    1.8k
                 </div>
                 
 
@@ -420,87 +414,98 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="导读"><a href="#导读" class="headerlink" title="导读"></a>导读</h3><p>“天下没有免费的午餐。”</p>
-<p>这句话只说对了一半。对于软件业，或者更准确一点，对于<strong>自由软件业</strong>，这并不一直是对的。</p>
-<p>商业软件公司正在控制着我们 —— 普通计算机用户甚至专业的程序员 —— 的大脑，在我们的潜意识里面，似乎只有大公司的东西才质量好。下面是几个场景：</p>
+                <h1 id=""><a href="#" class="headerlink" title=""></a></h1><blockquote>
+<p>VCC 是一个 UNIX&#x2F;Linux 上的命令行聊天软件。</p>
+</blockquote>
+<h3 id="VCC-简介"><a href="#VCC-简介" class="headerlink" title="VCC 简介"></a>VCC 简介</h3><p>我热爱 UNIX&#x2F;Linux 和 C 语言，VCC（very cool chat）是我和其他人开发的一个业余（课余）作品。它是用 C 编写的，是一个运行在 UNIX&#x2F;Linux 上的命令行聊天软件。VCC 目前还处于相当早期的阶段。这次将它介绍给大家是希望引来一些关注，无论是建议还是 bug 报告。当然，要是你对这个项目感兴趣，也非常欢迎你参与到开发当中。</p>
+<p>我们开发它一方面是为了在命令行上更好的进行聊天对话，另一方面纯粹为了提升技术以及为了好玩。使用 VCC，你可以在写代码的时候快速切换到它所在终端标签聊天，这一直是我的一个梦想。</p>
+<p>当前版本的 vcc 1.5.2&#x2F;vccd 1.6.1 支持用户登录、广播消息、创建 &#x2F; 加入会话，以及在会话中聊天。</p>
+<p>VCC 采用 GPLv3 许可证，目前贡献者有我（intirain）以及 3swordman。</p>
+<h3 id="安装-VCC"><a href="#安装-VCC" class="headerlink" title="安装 VCC"></a>安装 VCC</h3><p>VCC 分为客户端（即 <code>vcc</code>）以及服务端（即 <code>vccd</code>），托管在码云上：</p>
 <ul>
-<li>我倾向通过<strong>收费</strong>的网课、系列视频或者文章来学习技术，而不是阅读软件自带的<strong>免费</strong>文档或者是<strong>免费</strong>的外语甚至中文标准，因为前者更容易。</li>
-<li>免费的东西都是<strong>劣质</strong>的。只有收费的东西才可以保证质量高。</li>
-<li>才不会有人将优质资源公开免费，除非他们有着特殊目的。</li>
-<li>大公司的软件比一群只因为兴趣爱好的人写的软件更稳定、更值得信赖。</li>
+<li><code>vcc</code>：(<a target="_blank" rel="noopener" href="https://gitee.com/intirain/vcc.git">https://gitee.com/intirain/vcc.git</a>)</li>
+<li><code>vccd</code>：(<a target="_blank" rel="noopener" href="https://gitee.com/intirain/vccd.git">https://gitee.com/intirain/vccd.git</a>)</li>
 </ul>
-<p>绝大多数普通用户都会认为这几条全都是正确的，甚至一些<strong>有着几年经验</strong>的“高级”程序员也是。他们宁愿买某公司家的 <strong>IDE</strong> 来开发，而不是使用轻量级的、<strong>免费</strong>的 vim，后者毫无疑问是大多数 UNIX 程序员的必备。</p>
-<p>这一切的一切，都是因为：</p>
-<h3 id="一、奇妙的商业软件"><a href="#一、奇妙的商业软件" class="headerlink" title="一、奇妙的商业软件"></a>一、奇妙的商业软件</h3><p>自从 Windows 系统成功，成功商人比尔•盖茨就被各种各样的人放在各种各样的地方“膜拜”。一方面可能是因为他太有钱，一方面可能是因为他做了这么个系统（网络上还有很多人宣称比尔•盖茨设计并实现了 Windows 系统）。</p>
-<p>然而，在这个“伟大”的窗口系统死机、蓝屏之时，大多数人骂的却是他们的电脑：“什么破电脑！见鬼！”，而不是系统（顺便说一句，还有人将 “Windows” 称作电脑）。真奇妙。</p>
-<p>转观无数的 Linux 开发者（哪怕是林纳斯•托瓦兹），都没有受到这样的待遇。</p>
-<p>软件是值得付钱的，连自由软件领袖理查德•斯托曼都没有否认这一点。但是，你真的确定那些糟糕的、动不动就“该应用程序无响应”的东西值得这么多钱吗？我反正觉得不是。</p>
-<p>“某窗口系统”还有一个十分神奇之处，它好像是支持 POSIX 的，毕竟设计某新 32 系统的时候这不就是其中一个目标吗？（当然有的人会跟我说那应该是 ISO C）</p>
-<p>实际上呢，好像它只支持了为数不多的几个系统调用，剩下的几乎都是标准库函数（<code>strlen</code> 那样的），就连基本的 POSIX 风格的 <code>open</code> 都没有……</p>
-<p>与之对比的是对各种标准都支持的 Linux。它支持全套的 POSIX （streams 除外），性能测试也不错（当然，“某窗口系统”的裸机测试也不错。注意，是裸机），更令人骄傲的是，优秀的进程创建以及文件系统。与此相比，窗口系统的文件系统以及进程创建就不尽人意。</p>
-<blockquote>
-<p>关于对 POSIX 的支持，参见《UNIX 环境高级编程》第二章<br>关于进程创建以及 Windows 系统的相关情况，参见《操作系统概念》 第十六（Linux）以及十七章 （Windows） 以及 《Linux 内核设计与实现》第一章</p>
-</blockquote>
-<p>我知道有些人又要说啥了：我们的安全认证等级（A1 那样的玩意儿）比你们高！</p>
-<blockquote>
-<p>关于安全等级参见《操作系统概念》 第十四章<br>这里安全认证单单是指对文件的访问权限的丰富，某系统可以设置 XXX 没法访问之类的</p>
-</blockquote>
-<p>这是无法避免的了，传统 UNIX 的设计就从来没想过这一点，用户被抽象成了 <strong>同组</strong>、<strong>拥有者</strong>以及<strong>其他</strong>（当然，<code>root</code> 总是有权限）。但就我个人的观点来说，这就足够了，毕竟我没见过有多少用户会创建两个用户，他们甚至还在用 Administrator 或者是以一些愚蠢的字符为名字，例如 “abc123”。</p>
-<p>再来看看软件。</p>
-<h3 id="二、设计哲学-当然不是"><a href="#二、设计哲学-当然不是" class="headerlink" title="二、设计哲学 (当然不是"></a>二、设计哲学 (当然不是</h3><p>“某窗口系统”的软件挺多，包括 IE 这样的令人头疼的浏览器（哦不，它已经被放弃了）、各种没人碰过的游戏以及一大堆更没人碰过的 <strong>附件</strong>。这些是随着系统一块安装上去的，想卸载必须手动，十分的麻烦。还有类似 Power Point 这样的有用的“高级软件”，单个软件就包含了数不尽的功能，当然，它十分的贵。</p>
-<p>了解 Linux 的同学大概已经知道我会说什么了。没错，我要说的就是不同系统下的设计哲学。</p>
-<p>这更是一个差距，Linux 下面的每一个软件都平均不足 10 MB，并且都有着自己独特的分工。<code>wc</code> 就是统计文本文件的、<code>cat</code> 就是显示文件内容的（就是这么简单）、<code>grep</code> 就是在文件里头查找的，类似这样的软件数不胜数。利用 UNIX 的设计哲学之一 —— 管道 —— 就可以很方便的统计一个文件中含 Linux 这个词的行数（bash 不算很精通，见谅）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ grep &quot;Linux&quot; foo | wc -l </span><br></pre></td></tr></table></figure>
+<p>将上述代码仓库克隆到本地后，进入该目录并且运行 <code>make</code> 来编译。你会得到一个可执行文件 <code>vcc</code> 或者 <code>vccd</code>。</p>
+<h3 id="运行-vcc-客户端"><a href="#运行-vcc-客户端" class="headerlink" title="运行 vcc 客户端"></a>运行 vcc 客户端</h3><p>不提供参数直接运行客户端，会连接到我建立的默认服务器（<code>124.223.105.230</code>）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vcc $ ./vcc </span><br></pre></td></tr></table></figure>
 
-<p>而在那个操作系统呢？你应该需要用记事本先打开那个文件，复制到另一个 <code>.doc</code> 文档里头，然后再找一找“查找”键，然后按一下。或许你还需要划到最底下看一看有多少行……</p>
-<p>那来个更难一点的呢，看一看当前目录下所有后缀名为 <code>.txt</code> 的文件里头有多少行包含 Linux？</p>
-<p>对 UNIX 来说小菜一碟：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ find ./ -name &quot;*.txt&quot; | xargs grep &quot;Linux&quot; | wc -l </span><br></pre></td></tr></table></figure>
+<p>它将会提示你输入用户名以及密码。如果你是游客，则可使用游客账户（用户名和密码都是 <code>guest</code>）。而如果你想要获得一个账号，请向我发邮件（ mailto:<a href="mailto:&#x69;&#x6e;&#116;&#105;&#114;&#x61;&#x69;&#x6e;&#x40;&#49;&#54;&#x33;&#46;&#x63;&#111;&#109;">&#x69;&#x6e;&#116;&#105;&#114;&#x61;&#x69;&#x6e;&#x40;&#49;&#54;&#x33;&#46;&#x63;&#111;&#109;</a> ）联系我。</p>
+<p>如果你想要连接到自己那有着 128 个核心、1 TB 内存、SSD 1 YB 的小型服务器，请运行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vcc $ ./vcc [服务器 IP 地址] # 当前还不支持域名</span><br></pre></td></tr></table></figure>
 
-<p>在另一个“伟大的系统”上呢？</p>
-<p>我想不需要多举例，大家就能看出来这两个系统谁设计的更好了。</p>
-<blockquote>
-<p>还是会有人说，这个系统本来就是给程序员用的，那个系统本来就是给普通用户用的。的确，那为什么你这个程序员还在用“某窗口系统”呢？</p>
-</blockquote>
-<h3 id="三、“真幼稚”"><a href="#三、“真幼稚”" class="headerlink" title="三、“真幼稚”"></a>三、“真幼稚”</h3><p>在一个复古的群聊中。有这样一个大佬。引用我对他的评价：</p>
-<blockquote>
-<p>此人身高八（划掉，七）尺，自诩风度翩翩，常以“京中美男子”而自拟。爱为人师，尝以“全栈大佬”自号，实则不知汇编、不知西语（C）为何物者也。<br>其曰：“仅学可令吾发家之事”。因不习西语（C）。遇人求问，常为省流量，略回 “..” 二字，甚含深意也。<br>吾不与其为友，另有它故：其人曰：“西语（C）者，垃圾也”，吾对之曰：“尔乃垃圾之中上等者也”，羞怒下移吾出群，回看，其语已撤回也。</p>
-</blockquote>
-<p>他还有一个口头禅，“真幼稚”。如同高雅的文言文里写的一样，他只是为了发家才学编程。所以对于开源、自由之类的…… 你可以想象到他的反应。</p>
-<p>开源幼稚吗？</p>
-<p>我想不是的。</p>
-<p>正如理查德•斯托曼在演讲中说的：</p>
-<blockquote>
-<p>软件好像是菜谱。最开始，你从朋友家里拿到了一份，回到家你就开始琢磨了：是放点糖还是放点辣椒呢？都可以。愿意研究的人，可以将菜变得更好吃，更符合一部分人的口味，然后传给别人。所有人都能吃上美味的饭菜。（演讲的具体内容参见《若为自由故》）</p>
-</blockquote>
-<p>商业软件做了什么？</p>
-<p>软件还是菜谱。一个大厨对你说：“菜谱保密”，你就只能吃他做的菜，而不能自己调理。饭店的菜好吃，没错。但是没人知道菜里头还有什么。如果你想要把菜谱给别人，他们就把你扔到监狱里把你叫做“贼”。这是现实。</p>
-<p>更过分的呢？</p>
-<p>大厨把菜谱给你了，里面还塞着一个计时器。你能照着菜谱做 30 遍，满了限额之后，他们就要求你付钱。不付？那菜谱就会自动销毁，甚至在上面写上几个大字：这人是个穷光蛋。</p>
-<p>软件是值得付钱的，我再三强调，一个优秀好用的软件是值得我们高兴地为它付钱的，甚至更优秀的软件会让我们为它的作者塞钱、捐款。然而，我从没见过有值得五千块钱的软件，没有理由为一个设计落后的微内核，整个系统靠着毫秒级速度的 IPC 来工作的系统付上这么多钱。如果说 UNIX 值得 5000，我觉得无可厚非，因为 UNIX 是这个星球上设计最好的系统之一。</p>
-<p>“最好的系统”不是乱说的。拿 UNIX 其中一个衍生品 —— Linux 来比较，就比较日常用户的体验。启动最慢、内存占用最大的 Firefox 也只需要几秒钟时间，按一下鼠标就可以。对于那个系统，就应该不需要多说了吧……</p>
-<h3 id="四、这到底是系统的原因吗"><a href="#四、这到底是系统的原因吗" class="headerlink" title="四、这到底是系统的原因吗"></a>四、这到底是系统的原因吗</h3><p>前面的所有内容都在说 Linux 和“某窗口系统”。抛开金钱，这两个都可以算得上地球上十分优秀的操作系统。Linux 以及 UNIX 注重简洁，而“某窗口系统”注重用户体验和美观，裸机性能测试也十分不错。但这里，我们要讨论的是，到底是什么使得窗口系统在日常使用中如此的慢。</p>
-<h4 id="设计"><a href="#设计" class="headerlink" title="设计"></a>设计</h4><p>首先我要说的就是设计。</p>
-<p>微内核设计是十分优雅的，这一点我们无法反驳。然而，它却好像并没有为内核减轻多少开销，毫秒级的 IPC 到处都是。它的内核太小了，就连系统调用都放在了 <strong>动态库</strong> 里，导致正常应用的启动要进行多次重链接。</p>
-<p>它的窗口框架也不尽人意。回调一直是 POSIX 所极力避免的东西，该标准中几乎没有关于回调的内容，而是异步、<code>poll</code>、<code>select</code> 这样更符合人类逻辑的东西。</p>
-<p>而它呢，窗口框架的所有消息（就是那个 <code>Msg</code>）都靠回调来处理，正这样导致了响应速度的不尽人意。一个小小的窗口点击、移动都成为了事件。</p>
-<p>转过来看 UNIX&#x2F;Linux，与其窗口框架类似的是信号。传统信号通过 <code>signal()</code> 设置，而现代的则通过 <code>sigaction()</code>，无论接口怎么不一样，都有着“默认操作”，即 <code>SIG_DFL</code>。所以如果让我给窗口系统提一个修改意见，我首先会说：“请加一个 <code>RegisterMsgs</code> 调用，为每一个 msg 都提供一个 handler，并支持设置默认以及忽略操作吧！”</p>
-<blockquote>
-<p>有关 signal 的详细内容参见《UNIX 环境高级编程》</p>
-</blockquote>
-<h4 id="自作聪明的用户"><a href="#自作聪明的用户" class="headerlink" title="自作聪明的用户"></a>自作聪明的用户</h4><p>你可以看到一系列“某某安全管家”的应用程序。在 XP 时代，这是必不可少的，他可以防止你的系统被人闯入。然而，现在都…… 2202 年了，还是有数不胜数的自作聪明的用户（甚至程序员）尝试安装他们，安装七八个同时烧电脑的情况也很正常。</p>
-<p>我曾经在我的 8.1 以及 10 上重装系统并且不安装任何电脑管家，结果性能提升了至少两倍，和 Linux 并没有相差太多。</p>
-<p>当然，我没有说“某某管家”没有用。实际上它们是非常有用的，无数的安全人员编写了他们，但是现代内核不再需要如此严格的保护了，所以说到底，这还是早期系统太差劲的原因。</p>
-<p>然而 “某某安全极速浏览器”的性质就截然不同了，从来没有人需要过这种应用，而实际上它们就是个套壳。编写这种应用的人和诈骗完全一样，将他们闭源并且加上几个广告，就变成了自己的“国产”浏览器。</p>
-<h3 id="五、自封后路的窗口系统"><a href="#五、自封后路的窗口系统" class="headerlink" title="五、自封后路的窗口系统"></a>五、自封后路的窗口系统</h3><p>综上所述，那个商业系统就是被各种糟糕的后台程序搅黄了，而它们总是喜欢位于后台的原因，根本上就是商业原因 —— 看看你右下角那一个个小图标，它们应该比桌面上显眼吧！</p>
-<p>同时，计时并且催促你赶紧交钱的软件，也肯定需要放在后台吧。</p>
-<p>也就是说，可怜的商业窗口系统，自己告别了原来属于自己的 —— 无穷尽的自由软件开发人员。</p>
-<h3 id="六、未来"><a href="#六、未来" class="headerlink" title="六、未来"></a>六、未来</h3><p>随着计算机科学的发展，越来越多的大佬从小学五年级、六年级就开始学习编程（calvinlin 哥甚至三四年级开始玩 shell，那时候我还在玩 cmd.exe）。</p>
-<p>随着他们技术的成长，一部分人会毫不犹豫地选择换到 Linux，而另一部分则继续选择使用有着很多 IDE 的“某窗口系统”。但是无论是哪个系统，我都相信，这些少年黑客会毫不犹豫地投入到开源软件之列中，为世界贡献一批又一批的人类高质量开源软件。追求自由，是孩子们的天性，不是吗？</p>
-<p>那时，GNU 计划、Linux 内核都将会卓越成长，向世界展现开源的魅力！</p>
-<p>世界将属于开源！</p>
-<p>（全文完）</p>
-<p>作者简介：intirain （或者 rain 也行），UNIX、x86、RISC-V 上的 C。</p>
+<p>登录成功之后即可开始聊天，只需要输入消息并且回车即可。过长的信息（大约 200 字节以上）会被截断。</p>
+<p><img src="https://img.linux.net.cn/data/attachment/album/202204/03/100517yt1qiqlg6jyqg1q2.png" alt="img"></p>
+<h3 id="运行自己的-vccd-服务器端"><a href="#运行自己的-vccd-服务器端" class="headerlink" title="运行自己的 vccd 服务器端"></a>运行自己的 vccd 服务器端</h3><p>你可以在 46 端口上运行自己的 <code>vccd</code> 服务。</p>
+<p>以下命令需要 root 权限。</p>
+<p>如果你是第一次运行 <code>vccd</code>，首先请执行安装脚本：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vccd $ sudo scripts/install</span><br></pre></td></tr></table></figure>
+
+<p>该脚本会创建文件 <code>/etc/vccd-runtime</code>，并且在其中记录了 <code>vccd</code> 的运行时目录的位置（<code>$HOME/.vccd-runtime</code>）。该目录中保存着用户信息（当前还没有加入聊天记录功能），具体的位置是 <code>users/用户名</code>，每个文件都是一个采用本机字节序的结构体。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vccd $ sudo ./vccd</span><br></pre></td></tr></table></figure>
+
+<p>上列命令只是启动了 <code>vccd</code> 守护进程（严格来说，它只能算一个运行于后台的程序，并不是“守护进程”），而没有创建任何用户。运行如下命令可以创建用户（不需要重启 <code>vccd</code>）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vccd $ sudo scripts/adduser &lt;用户名&gt; &lt;密码&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="vcc-命令"><a href="#vcc-命令" class="headerlink" title="vcc 命令"></a>vcc 命令</h3><p><code>vcc</code> （客户端）支持命令，它的命令都以 <code>-</code> 开头。以下是当前 <code>vcc</code> （1.5.2）支持的所有命令，可以在连接到服务器的 <code>vcc</code> 客户端里输入 <code>-help</code> 命令查看：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">#000 intirain$: -help-help:	Show information about every message. -quit:	Disconnect to server and exit vcc. -ls:	List all users online now. -rate:	Change message refresh rate. -newse:	Create a new session. -currs:	Get current session id. -swtch:	Switch to another session. -lsse:	List all sessions created. #000 intirain$: </span><br></pre></td></tr></table></figure>
+
+<p>以下是对每一条命令的详细描述：</p>
+<table>
+<thead>
+<tr>
+<th>命令名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>-help</code></td>
+<td>显示所有命令的帮助信息</td>
+</tr>
+<tr>
+<td><code>-quit</code></td>
+<td>退出 <code>vcc</code>（相当于杀掉它）</td>
+</tr>
+<tr>
+<td><code>-ls</code></td>
+<td>查看当前在线的所有用户</td>
+</tr>
+<tr>
+<td><code>-rate</code></td>
+<td>设置刷新率</td>
+</tr>
+<tr>
+<td><code>-newse</code></td>
+<td>新建一个会话</td>
+</tr>
+<tr>
+<td><code>-currs</code></td>
+<td>查看当前会话 id（sid）</td>
+</tr>
+<tr>
+<td><code>-swtch</code></td>
+<td>加入另一个会话</td>
+</tr>
+<tr>
+<td><code>-lsse</code></td>
+<td>查看服务器上所有已经创建了的会话</td>
+</tr>
+</tbody></table>
+<p>说明：</p>
+<ul>
+<li>刷新率：<code>vcc</code> 需要时序性的请求服务器来获取新消息。刷新率以赫兹为单位，默认为 1 Hz （即每秒刷新一次）。刷新率不得超过 1000 Hz （即每一毫秒刷新一次）。</li>
+<li>会话：<code>vcc</code> 中的群聊叫做“会话”。会话是由一或多个用户组成的聊天室，0 号会话为大厅，所有人都在其中。会话无法退出。现在还不支持销毁一个会话，只能通过杀掉 <code>vccd</code> 来手动完成。</li>
+<li>会话不会退出，因此在加入另一会话后你仍在原先的会话中，仍会收到原先会话中的消息。但是你在加入另一会话后发送的消息，并不会被原先会话中的人收到。会话的创建者在会话创建后就移植在会话中。</li>
+</ul>
+<p><code>vcc</code> 还没有加入命令行参数的支持，也就是说所有的参数都需要你在键入该命令交互式输入。</p>
+<h3 id="VCC-的输出信息"><a href="#VCC-的输出信息" class="headerlink" title="VCC 的输出信息"></a>VCC 的输出信息</h3><p>VCC 使用了 ANSI 的 CSI 转义，但没有检查当前终端对该标准的支持。如果你在类似串口的终端上运行 <code>vcc</code>，将会直接得到没有渲染的转义字符。<code>vcc</code> 的配色是可更改的，默认的配色主题在 <code>pretty.c</code>中定义，是一个 C 语言结构体，该结构体在 <code>include/vcc/pretty.h</code> 中定义。</p>
+<p>如果你觉得当前默认的配色不甚好看，完全可以在 <code>pretty.c</code> 中新建自己的配色，也可以复制并更改默认配色。我们也鼓励大家将自己认为好看的配色 PR 到码云仓库，我们在看到后会第一时间合并。</p>
+<h3 id="参与-VCC-的开发"><a href="#参与-VCC-的开发" class="headerlink" title="参与 VCC 的开发"></a>参与 VCC 的开发</h3><p><code>vcc</code> 以及 <code>vccd</code> 是以 GPL 许可证发布的，属于我们的 “inti 计划”旗下项目之一。我们鼓励你参与开发改进它，抱歉，我们无力为此支付报酬，参与开发是无偿的。</p>
+<p>“inti 计划”是我们（其实也就俩人）创建的一个计划，目的是为了将优秀的自由软件（Linux 以及 GNU 计划）推向社会。我们计划开发的项目是 GNU 计划中所不包含的软件或者库，采用的编程语言为 C&#x2F;C++。非常欢迎大家的加入。</p>
+<p>VCC 还处于非常早期的开发阶段，但它应该已经具备了一个基本聊天软件的功能。我们当然希望你能够使用它、改进它，并且将它推广给身边使用 UNIX&#x2F;Linux 的人们。目前，我们正在稳定当前的版本。将来，它也许会成为一个不错的社交软件，动态之类的高级功能也会实现。</p>
+<p>顺便说一句，VCC 的 Windows 移植版本正在开发中，预计还需要几周的时间（毕竟我们只有周末才能编程 :( ）。移植之后的 VCC 应该不会保留配色（因为 Windows 并不支持 CSI 转义）。</p>
+<hr>
+<p>作者简介：intirain，喜欢 UNIX、x86、RISC-V 上的 C。</p>
 
                 
             </div>
@@ -527,7 +532,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://guorenjun.github.io/2022/08/14/%E5%B0%91%E5%B9%B4%E9%BB%91%E5%AE%A2%E5%AF%B9%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6%E7%9A%84%E8%87%AA%E7%94%B1%E6%BC%AB%E8%B0%88/">http://guorenjun.github.io/2022/08/14/%E5%B0%91%E5%B9%B4%E9%BB%91%E5%AE%A2%E5%AF%B9%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6%E7%9A%84%E8%87%AA%E7%94%B1%E6%BC%AB%E8%B0%88/</a>
+                    <a href="http://guorenjun.github.io/2022/08/15/VCC%20%E7%AE%80%E4%BB%8B/">http://guorenjun.github.io/2022/08/15/VCC%20%E7%AE%80%E4%BB%8B/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -567,10 +572,6 @@
                             
                                 <a href="/tags/%E7%BC%96%E7%A8%8B/">
                                     <span class="chip bg-color">编程</span>
-                                </a>
-                            
-                                <a href="/tags/%E5%BC%95%E6%88%98/">
-                                    <span class="chip bg-color">引战</span>
                                 </a>
                             
                         </div>
@@ -885,9 +886,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/08/15/VCC%20%E7%AE%80%E4%BB%8B/">
                     <div class="card-image">
@@ -905,9 +907,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-08-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-15
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -916,6 +918,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -934,24 +937,24 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/08/07/%E5%88%A4%E5%86%B3/">
+                <a href="/2022/08/14/%E5%B0%91%E5%B9%B4%E9%BB%91%E5%AE%A2%E5%AF%B9%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6%E7%9A%84%E8%87%AA%E7%94%B1%E6%BC%AB%E8%B0%88/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="判决">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="少年黑客对自由软件的自由漫谈">
                         
-                        <span class="card-title">判决</span>
+                        <span class="card-title">少年黑客对自由软件的自由漫谈</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            文/Franz Kafka
+                            
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-14
                             </span>
                         <span class="publish-author">
                             
@@ -964,8 +967,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E6%9D%82/">
-                        <span class="chip bg-color">杂</span>
+                    <a href="/tags/%E7%BC%96%E7%A8%8B/">
+                        <span class="chip bg-color">编程</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%BC%95%E6%88%98/">
+                        <span class="chip bg-color">引战</span>
                     </a>
                     
                 </div>
